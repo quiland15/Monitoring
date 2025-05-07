@@ -49,13 +49,12 @@ def run_security_check():
 
 # Jadwal ucapan harian
 schedule.every().day.at("06:30").do(send_morning_greeting)
-schedule.every().day.at("11:26").do(send_afternoon_greeting)
+schedule.every().day.at("11:34").do(send_afternoon_greeting)
 schedule.every().day.at("21:00").do(send_night_greeting)
 
 # Jadwal pengecekan keamanan (opsional)
 # schedule.every(1).hours.do(run_security_check)
 
 # Loop untuk terus jalanin jadwal
-while True:
-    schedule.run_pending()
-    time.sleep(30)
+send_afternoon_greeting()
+
