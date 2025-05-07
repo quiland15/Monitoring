@@ -49,7 +49,7 @@ def run_security_check():
 
 # Jadwal ucapan harian
 schedule.every().day.at("06:30").do(send_morning_greeting)
-schedule.every().day.at("12:00").do(send_afternoon_greeting)
+schedule.every().day.at("11:30").do(send_afternoon_greeting)
 schedule.every().day.at("21:00").do(send_night_greeting)
 
 # Jadwal pengecekan keamanan (opsional)
