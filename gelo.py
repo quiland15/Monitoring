@@ -35,7 +35,7 @@ def send_morning_greeting():
     send_whatsapp("🌅 Selamat pagi sayang, semoga harimu indah ❤️")
 
 def send_afternoon_greeting():
-    send_whatsapp("🌞 Selamat siang sayang, jangan lupa makan ya 😘")
+    send_whatsapp("🌞 Selamat siang sayang, jangan lupa makan ya 😘. Aku lagi sange pengen kontol kamu ")
 
 def send_night_greeting():
     send_whatsapp("🌙 Selamat malam sayang, mimpi indah dan tidur nyenyak ya 💕")
@@ -48,9 +48,9 @@ def run_security_check():
     send_whatsapp(full_message)
 
 # Jadwal ucapan harian
-schedule.every().day.at("06:30").do(send_morning_greeting)
-schedule.every().day.at("11:34").do(send_afternoon_greeting)
-schedule.every().day.at("21:00").do(send_night_greeting)
+#schedule.every().day.at("06:30").do(send_morning_greeting)
+schedule.every().day.at("11:40").do(send_afternoon_greeting)
+#schedule.every().day.at("21:00").do(send_night_greeting)
 
 # Jadwal pengecekan keamanan (opsional)
 # schedule.every(1).hours.do(run_security_check)
